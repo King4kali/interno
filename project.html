@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interno Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font aweacome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="menu">
+        <div class="logo">
+            <a href="#">
+                <img src="img/Logo.png" alt="">
+                <h1>Interno</h1>
+            </a>
+        </div>
+        <ul class="nav_items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <button class="search" onclick="search()"><i class="fa-regular fa-magnifying-glass"></i></button>
+        </ul>
+        <button class="menu_flex" onclick="menuFlex()">
+            <i class="fa-regular fa-bars"></i>
+        </button>
+    </nav>
+    <nav class="flex_menu">
+        <ul class="nav_items_flex">
+            <button class="close_menu" onclick="closeMenu()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <header class="header_pages" id="ourPorjects">
+        <div class="header_pages_block">
+            <h2 class="h2_center">Our Project</h2>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="projects_main">
+                <div class="projects_nav">
+                    <div class="projects_nav_div">
+                        <button id="Bathroom" class="projects_btn" onclick="projectsBathroomBtn()">
+                            Bathroom
+                        </button>
+                    </div>
+                    <div class="projects_nav_div">
+                        <button id="BedRoom" class="projects_btn projects_btn_active" onclick="projectsBedRoomBtn()">
+                            Bed Room
+                        </button>
+                    </div>
+                    <div class="projects_nav_div">
+                        <button id="Kitchan" class="projects_btn" onclick="projectsKitchanBtn()">
+                            Kitchan
+                        </button>
+                    </div>
+                    <div class="projects_nav_div">
+                        <button id="LivingArea" class="projects_btn" onclick="projectsLivingAreaBtn()">
+                            Living Area
+                        </button>
+                    </div>
+                </div>
+
+                <div class="projects_body">
+                    <div class="projects_body_card card_left">
+                        <img src="img/projects1.png" alt="">
+                        <div class="follow_our_projects_card_bootm">
+                            <div>
+                                <h5 class="info_h5">Minimal Bedroom</h5>
+                                <p class="p1">Decor / Architecture</p>
+                            </div>
+                            <button class="more_btn" onclick="bedroomBtn()">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="projects_body_card card_right">
+                        <img src="img/projects2.png" alt="">
+                        <div class="follow_our_projects_card_bootm">
+                            <div>
+                                <h5 class="info_h5">Minimal Bedroom</h5>
+                                <p class="p1">Decor / Architecture</p>
+                            </div>
+                            <button class="more_btn" onclick="bedroomBtn()">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="projects_body_card card_right">
+                        <img src="img/projects4.png" alt="">
+                        <div class="follow_our_projects_card_bootm">
+                            <div>
+                                <h5 class="info_h5">Modern Bedroom</h5>
+                                <p class="p1">Decor / Architecture</p>
+                            </div>
+                            <button class="more_btn" onclick="bedroomBtn()">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="projects_body_card card_left">
+                        <img src="img/projects3.png" alt="">
+                        <div class="follow_our_projects_card_bootm">
+                            <div>
+                                <h5 class="info_h5">Classic Minimal Bedroom</h5>
+                                <p class="p1">Decor / Architecture</p>
+                            </div>
+                            <button class="more_btn" onclick="bedroomBtn()">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="projects_body_card card_left">
+                        <img src="img/projects5.png" alt="">
+                        <div class="follow_our_projects_card_bootm">
+                            <div>
+                                <h5 class="info_h5">Minimal Bedroom table</h5>
+                                <p class="p1">Decor / Architecture</p>
+                            </div>
+                            <button class="more_btn" onclick="bedroomBtn()">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="projects_body_card card_right">
+                        <img src="img/projects6.png" alt="">
+                        <div class="follow_our_projects_card_bootm">
+                            <div>
+                                <h5 class="info_h5">System Table</h5>
+                                <p class="p1">Decor / Architecture</p>
+                            </div>
+                            <button class="more_btn" onclick="bedroomBtn()">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="projects_body_card card_right">
+                        <img src="img/projects7.png" alt="">
+                        <div class="follow_our_projects_card_bootm">
+                            <div>
+                                <h5 class="info_h5">Modern Bedroom</h5>
+                                <p class="p1">Decor / Architecture</p>
+                            </div>
+                            <button class="more_btn" onclick="bedroomBtn()">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="projects_body_card card_left">
+                        <img src="img/projects8.png" alt="">
+                        <div class="follow_our_projects_card_bootm">
+                            <div>
+                                <h5 class="info_h5">Modern Medroom</h5>
+                                <p class="p1">Decor / Architecture</p>
+                            </div>
+                            <button class="more_btn" onclick="bedroomBtn()">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="foot">
+        <div class="foot_body">
+            <div class="foot_section">
+                <div class="foot_logo">
+                    <a class="a_logo" href="#">
+                        <img src="img/Logo.png" alt="">
+                        <h1>Interno</h1>
+                    </a>
+                    <p class="p1">It is a long established fact that a reader will be distracted lookings.</p>
+                    <div class="socials_foot">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_info">
+                <h5 class="info_h5">Pages</h5>
+                <a href="about.html">About Us</a>
+                <a href="project.html">Our Projects</a>
+                <a href="#">Our Team</a>
+                <a href="#">Contact Us</a>
+                <a href="services.html">Services</a>
+            </div>
+            <div class="foot_info">
+                <h5 class="info_h5">Services</h5>
+                <a href="project.html?activeBtn=Kitchan">Kitchan</a>
+                <a href="project.html?activeBtn=LivingArea">Living Area</a>
+                <a href="project.html?activeBtn=Bathroom">Bathroom</a>
+                <a href="project.html?activeBtn=BedRoom">Dinning Hall</a>
+                <a href="project.html?activeBtn=BedRoom">Bedroom</a>
+            </div>
+            <div class="foot_contact">
+                <h5 class="info_h5">Contact</h5>
+                <a href="#">55 East Birchwood Ave. Brooklyn New York 11201</a>
+                <a href="#">contact@interno.com</a>
+                <a href="#">(123) 456 - 7890</a>
+            </div>
+        </div>
+    </footer>
+    <div class="foot_bottom">
+        <a class="a_foot" href="#">Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow</a>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
