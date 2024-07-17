@@ -1959,6 +1959,9 @@ main{
         width: 50%;
         padding: 45px 75px;
     }
+    .pricing_box{
+        width: 95%;
+    }
 }
 
 @media (max-width: 600px) {
