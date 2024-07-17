@@ -2012,7 +2012,12 @@ main{
     .main_about_us_box {
         padding: 50px 0;
     }
-
+    .main_asbout_us_card{
+        width: 100%;
+    }
+    .main_asbout_us_cards{
+        flex-direction: column;
+    }
     .main_asbout_us_card:not(:last-child) {
         margin-right: 0;
         margin-bottom: 20px;
