@@ -364,6 +364,7 @@ h1{
 .csc_info{
     width: 45%;
     padding: 43px 0px;
+    margin-right: 75px;
 }
 .h3_left{
     font-family: DM Serif Display;
@@ -2605,21 +2606,22 @@ main{
     .single_title_div{
         align-items: center;
     }
-
     .pricing{
-        flex-direction: column;
+        align-items: stretch;
     }
     .pricing_box{
-        width: 100%;
-    }
-    .pricing_box:not(:last-child){
-        margin-bottom: 50px;
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
     }
     .pricing_h2{
-        font-size: 85px;
+        font-size: 64px;
     }
     .small_p_centr{
-        font-size: 28px;
+        font-size: 20px;
+        line-height: 30px;
     }
     .projects_btn{
         padding: 25px 0px;
@@ -2664,6 +2666,7 @@ main{
     }
     .csc_info {
         width: 100%;
+        margin-right: 0;
     }
     .csc_call_us {
         width: 90%;
@@ -2767,9 +2770,15 @@ main{
     .projects_body_card {
         width: 47%;
     }
+    .pricing_box hr{
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 800px) {
+    .pricing{
+        flex-direction: column;
+    }
     .container{
         margin: 15% auto;
     }
@@ -3048,6 +3057,9 @@ main{
         margin: 0 auto;
         align-items: center;
     }
+    .foot_logo .p1{
+        text-align: center;
+    }
     .foot_body a {
         font-size: 24px;
         text-align: center;
@@ -3107,7 +3119,11 @@ main{
         padding: 45px 75px;
     }
     .pricing_box{
-        width: 100%;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .pricing_box:not(:last-child){
+        margin-bottom: 5%;
     }
     .profesional_card_img{
         width: 50%;
@@ -3115,6 +3131,9 @@ main{
 }
 
 @media (max-width: 600px) {
+    .pricing_box{
+        width: 80%;
+    }
     .nav_items_flex a{
         font-size: 32px;
     }
@@ -3456,5 +3475,8 @@ main{
     }
     .head_h2{
         font-size: 50px;
+    }
+    .pricing_box{
+        width: 100%;
     }
 }
