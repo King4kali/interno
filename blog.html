@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interno Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font aweacome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="background_line"></div>
+        <div class="background_line"></div>
+        <div class="background_line"></div>
+    </div>
+    <nav class="menu">
+        <div class="logo">
+            <a href="#">
+                <img src="img/Logo.png" alt="">
+                <h1>Interno</h1>
+            </a>
+        </div>
+        <ul class="nav_items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li><a href="faq.html">Faq's</a></li>
+            <button class="search" onclick="search()"><i class="fa-regular fa-magnifying-glass"></i></button>
+        </ul>
+        <button class="menu_flex" onclick="menuFlex()">
+            <i class="fa-regular fa-bars"></i>
+        </button>
+    </nav>
+    <nav class="flex_menu">
+        <ul class="nav_items_flex">
+            <button class="close_menu" onclick="closeMenu()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li><a href="faq.html">Faq's</a></li>
+        </ul>
+    </nav>
+    <header class="header_pages" id="headerBlog">
+        <div class="header_pages_block">
+            <h2 class="h2_center">Articles & News</h2>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="lastet_post_div">
+                <h3 class="h3_left">Latest Post</h3>
+                <div class="lastet_post">
+                    <div class="lastet_post_img">
+                        <img src="img/lastpostimg.png" alt="">
+                    </div>
+                    <div class="lastet_post_title">
+                        <h5 class="info_h5">Low Cost Latest Invented Interior Designing Ideas</h5>
+                        <p class="p1">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief. 
+                            <br> <br> Lorem Ipsum is not simply random text. It has roots in a piece of classica.</p>
+                        <div class="articles_news_bottom">
+                            <p class="small_p">26 December,2022 </p>
+                            <button class="news_btn" onclick="goToBlogDetails()">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="articles_news_main">
+                <h3 class="h3_left">Articles & News</h3>
+                <div class="articles_news_body">
+                    <div class="articles_news_box">
+                        <div class="articles_news_card">
+                            <div class="articles_news_img_card">
+                                <img src="img/Photo1.png" alt="">
+                                <div class="articles_news_img_info">
+                                     <p class="small_p">Kitchan Design</p>
+                                </div>
+                            </div>
+                            <div class="articles_news_info">
+                                <h5 class="info_h5">
+                                    Let’s Get Solution For Building Construction Work
+                                </h5>
+                                <div class="articles_news_bottom">
+                                    <p class="small_p">26 December,2022 </p>
+                                    <button class="news_btn" onclick="goToBlogDetails()">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles_news_card">
+                            <div class="articles_news_img_card">
+                                <img src="img/photo2.png" alt="">
+                                <div class="articles_news_img_info">
+                                     <p class="small_p">Living Design</p>
+                                </div>
+                            </div>
+                            <div class="articles_news_info">
+                                <h5 class="info_h5">
+                                    Low Cost Latest Invented Interior Designing Ideas.
+                                </h5>
+                            
+                                <div class="articles_news_bottom">
+                                    <p class="small_p">22 December,2022 </p>
+                                    <button class="news_btn" onclick="goToBlogDetails()">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles_news_card">
+                            <div class="articles_news_img_card">
+                                <img src="img/photo3.png" alt="">
+                                <div class="articles_news_img_info">
+                                     <p class="small_p">Interior Design</p>
+                                </div>
+                            </div>
+                            <div class="articles_news_info">
+                                <h5 class="info_h5">
+                                    Best For Any Office &amp; Business Interior Solution
+                                </h5>
+                                <div class="articles_news_bottom">
+                                    <p class="small_p">22 December,2022 </p>
+                                    <button class="news_btn" onclick="goToBlogDetails()">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles_news_box">
+                        <div class="articles_news_card">
+                            <div class="articles_news_img_card">
+                                <img src="img/Photo4.png" alt="">
+                                <div class="articles_news_img_info">
+                                     <p class="small_p">Kitchan Design</p>
+                                </div>
+                            </div>
+                            <div class="articles_news_info">
+                                <h5 class="info_h5">
+                                    Let’s Get Solution For Building Construction Work
+                                </h5>
+                                <div class="articles_news_bottom">
+                                    <p class="small_p">26 December,2022 </p>
+                                    <button class="news_btn" onclick="goToBlogDetails()">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles_news_card">
+                            <div class="articles_news_img_card">
+                                <img src="img/photo5.png" alt="">
+                                <div class="articles_news_img_info">
+                                     <p class="small_p">Living Design</p>
+                                </div>
+                            </div>
+                            <div class="articles_news_info">
+                                <h5 class="info_h5">
+                                    Low Cost Latest Invented Interior Designing Ideas.
+                                </h5>
+                            
+                                <div class="articles_news_bottom">
+                                    <p class="small_p">22 December,2022 </p>
+                                    <button class="news_btn" onclick="goToBlogDetails()">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles_news_card">
+                            <div class="articles_news_img_card">
+                                <img src="img/photo6.png" alt="">
+                                <div class="articles_news_img_info">
+                                     <p class="small_p">Interior Design</p>
+                                </div>
+                            </div>
+                            <div class="articles_news_info">
+                                <h5 class="info_h5">
+                                    Best For Any Office &amp; Business Interior Solution
+                                </h5>
+                                <div class="articles_news_bottom">
+                                    <p class="small_p">22 December,2022 </p>
+                                    <button class="news_btn" onclick="goToBlogDetails()">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="foot">
+        <div class="foot_body">
+            <div class="foot_section">
+                <div class="foot_logo">
+                    <a class="a_logo" href="#">
+                        <img src="img/Logo.png" alt="">
+                        <h1>Interno</h1>
+                    </a>
+                    <p class="p1">It is a long established fact that a reader will be distracted lookings.</p>
+                    <div class="socials_foot">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div> 
+            </div>
+            <div class="foot_info">
+                <h5 class="info_h5">Pages</h5>
+                <a href="about.html">About Us</a>
+                <a href="project.html">Our Projects</a>
+                <a href="team.html">Our Team</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="services.html">Services</a>
+            </div>
+            <div class="foot_info">
+                <h5 class="info_h5">Services</h5>
+                <a href="project.html?activeBtn=Kitchan">Kitchan</a>
+                <a href="project.html?activeBtn=LivingArea">Living Area</a>
+                <a href="project.html?activeBtn=Bathroom">Bathroom</a>
+                <a href="project.html?activeBtn=BedRoom">Dinning Hall</a>
+                <a href="project.html?activeBtn=BedRoom">Bedroom</a>
+            </div>
+            <div class="foot_contact">
+                <h5 class="info_h5">Contact</h5>
+                <a href="#">55 East Birchwood Ave. Brooklyn New York 11201</a>
+                <a href="#">contact@interno.com</a>
+                <a href="#">(123) 456 - 7890</a>
+            </div>
+        </div>
+    </footer>
+    <div class="foot_bottom">
+        <a class="a_foot" href="#">Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow</a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

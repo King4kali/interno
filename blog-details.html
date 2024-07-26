@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interno Blog Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font aweacome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="background_line"></div>
+        <div class="background_line"></div>
+        <div class="background_line"></div>
+    </div>
+    <nav class="menu">
+        <div class="logo">
+            <a href="#">
+                <img src="img/Logo.png" alt="">
+                <h1>Interno</h1>
+            </a>
+        </div>
+        <ul class="nav_items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li><a href="faq.html">Faq's</a></li>
+            <button class="search" onclick="search()"><i class="fa-regular fa-magnifying-glass"></i></button>
+        </ul>
+        <button class="menu_flex" onclick="menuFlex()">
+            <i class="fa-regular fa-bars"></i>
+        </button>
+    </nav>
+    <nav class="flex_menu">
+        <ul class="nav_items_flex">
+            <button class="close_menu" onclick="closeMenu()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li><a href="faq.html">Faq's</a></li>
+        </ul>
+    </nav>
+    <header class="header_pages" id="headerBlogDetails"></header>
+    <main>
+        <div class="container">
+            <div class="blog_details">
+                <div class="blog_details_main">
+                    <h3 class="h3_left">Let’s Get Solution for Building Construction Work</h3>
+                    <div class="blog_details_img">
+                        <img src="img/blog_img1.png" alt="">
+                    </div>
+                    <div class="articles_news_bottom">
+                        <p class="small_p">26 December,2022 </p>
+                        <p class="small_p">Interior / Design / Home / Decore</p>
+                    </div>
+                    <p class="p1">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable. <br> <br>
+                       Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.
+                    </p>
+                    <div class="project_main_title">
+                        <h3 class="h3_light_brown">“</h3>
+                        <h3 class="h3_brown">The details are not the details. <br> They make the design.</h3>
+                    </div>
+                    <h3 class="h3_left">Design sprints are great</h3>
+                    <p class="p1">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                    <div class="project_num">
+                        <div class="project_num_line"><span class="brown_span">1</span><p class="p1">Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p></div>
+                        <div class="project_num_line"><span class="brown_span">2</span><p class="p1">Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p></div>
+                        <div class="project_num_line"><span class="brown_span">3</span><p class="p1">Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p></div>
+                    </div>
+                    <div class="blog_details_img">
+                        <img src="img/blog_img2.png" alt="">
+                    </div>
+                    <p class="p1">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                    <div class="blog_details_tags">
+                        <div class="blog_details_buttons">
+                            <h5 class="small_h5">Tags</h5>
+                            <button class="small_btn" onclick="get_started()">
+                                Kitchan
+                            </button>
+                            <button class="small_btn not_active" onclick="get_started()">
+                                Bedroom
+                            </button>
+                        </div>
+                        <div class="blog_details_icons">
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="form_reply">
+                        <h3 class="from_h3">Leave a Reply</h3>
+                        <form class="reply_from" action="">
+                            <div class="form_group">
+                                <input type="text" placeholder="Name">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="form_group">
+                                <input type="website" placeholder="website">
+                                <input type="Phone" placeholder="Phone">
+                            </div>
+                            <div class="form_txt_info">
+                                <label for="info">Hello Iam Intrested in..</label>
+                                <input id="info" type="text" placeholder="">
+                            </div>
+                        </form>
+                        <div class="reply_form_checkbox">
+                            <input type="checkbox" id="myCheckbox">
+                            <label class="checkmark" for="myCheckbox"></label>
+                            <p class="small_input_p">Save my name, email, and website in this browser for the next time I comment.</p>
+                        </div>
+                    </div>
+                    <button class="large_btn" onclick="sendNow()">
+                        Send Now
+                        <i class="fa_arrow_right fa-light fa-arrow-right"></i>
+                    </button>
+                    
+                </div>
+                <div class="blog_details_menu">
+                    <div class="blog_search">
+                        <input class="search_blog_txt" type="text" placeholder="Search">
+                        <button class="search_blog_btn"><i class="search_blog_i fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="blog_lastet_news_block">
+                        <h4 class="small_h4_left">Latest News</h4>
+                        <div class="blog_lastet_news_div">
+                            <h5 class="small_h5">We Focus On Comfort <br> And Gorgeous</h5>
+                            <p class="small_p">06/02/2024</p>
+                        </div>
+                        <div class="blog_lastet_news_div">
+                            <h5 class="small_h5">We Focus On Comfort <br> And Gorgeous</h5>
+                            <p class="small_p">06/02/2024</p>
+                        </div>
+                        <div class="blog_lastet_news_div">
+                            <h5 class="small_h5">We Focus On Comfort <br> And Gorgeous</h5>
+                            <p class="small_p">06/02/2024</p>
+                        </div>
+                    </div>
+                    <div class="blog_caregories">
+                        <h4 class="small_h4_left">Categories</h4>
+                        <div class="blog_lastet_news_div">
+                            <p class="small_gray_p">Decoration</p>
+                        </div>
+                        <div class="blog_lastet_news_div">
+                            <p class="small_gray_p">Door Windows</p>
+                        </div>
+                        <div class="blog_lastet_news_div">
+                            <p class="small_gray_p">Home Land</p>
+                        </div>
+                        <div class="blog_lastet_news_div">
+                            <p class="small_gray_p">Roof Installation</p>
+                        </div>
+                    </div>
+                    <div class="blog_tags">
+                        <h4 class="small_h4_left">Tags</h4>
+                        <div class="blog_tags_buttons">
+                            <button class="small_btn" onclick="blogKitchan()">
+                                Kitchan
+                            </button>
+                            <button class="small_btn not_active" onclick="blogBedroom()">
+                                Bedroom
+                            </button>
+                            <button class="small_btn not_active" onclick="blogBuilding()">
+                                Building
+                            </button>
+                            <button class="small_btn not_active" onclick="blogArchitecture()">
+                                Architecture
+                            </button>
+                            <button class="small_btn not_active" onclick="blogKitchenPlanning()">
+                                Kitchen Planning
+                            </button>
+                            <button class="small_btn not_active" onclick="getBedroom()">
+                                Bedroom
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="blog_details_flex" onclick="blogDetailsFlex()">Blog Details</button>
+        </div>
+        
+        <div id="thanksDiv" class="thanks_request">
+            <div class="thanks_body">
+                <h2 class="thanks_request_h2">Thank you for your request</h2>
+                <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet recusandae voluptate architecto animi eius! Voluptas doloremque magnam soluta? Perspiciatis voluptatum dicta magnam, omnis maxime quasi eligendi debitis consequatur aut non sit excepturi dolor ullam quaerat, facere qui ab eveniet earum? Hic laboriosam a amet repellat ipsa illum qui expedita animi.</p>
+                <button id="closeThankDiv" class="close_thankDiv" onclick="closeFormProject()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer class="foot">
+        <div class="foot_body">
+            <div class="foot_section">
+                <div class="foot_logo">
+                    <a class="a_logo" href="#">
+                        <img src="img/Logo.png" alt="">
+                        <h1>Interno</h1>
+                    </a>
+                    <p class="p1">It is a long established fact that a reader will be distracted lookings.</p>
+                    <div class="socials_foot">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_info">
+                <h5 class="info_h5">Pages</h5>
+                <a href="about.html">About Us</a>
+                <a href="project.html">Our Projects</a>
+                <a href="team.html">Our Team</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="services.html">Services</a>
+            </div>
+            <div class="foot_info">
+                <h5 class="info_h5">Services</h5>
+                <a href="project.html?activeBtn=Kitchan">Kitchan</a>
+                <a href="project.html?activeBtn=LivingArea">Living Area</a>
+                <a href="project.html?activeBtn=Bathroom">Bathroom</a>
+                <a href="project.html?activeBtn=BedRoom">Dinning Hall</a>
+                <a href="project.html?activeBtn=BedRoom">Bedroom</a>
+            </div>
+            <div class="foot_contact">
+                <h5 class="info_h5">Contact</h5>
+                <a href="#">55 East Birchwood Ave. Brooklyn New York 11201</a>
+                <a href="#">contact@interno.com</a>
+                <a href="#">(123) 456 - 7890</a>
+            </div>
+        </div>
+    </footer>
+    <div class="foot_bottom">
+        <a class="a_foot" href="#">Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow</a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
